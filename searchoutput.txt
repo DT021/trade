@@ -1,0 +1,22 @@
+../baseapp/src/api/index.ts:export const changePassword = async body => API.post(conf)('/identity/users/password/confirm_code', body);
+../baseapp/src/modules/user/orders/sagas/ordersExecuteSaga.ts:        const order = yield call(API.post(executeOptions(getCsrfToken())), '/market/orders', params);
+../baseapp/src/modules/user/apiKeys/sagas/apiKeyCreateSaga.ts:        const apiKey = yield call(API.post(createOptions(getCsrfToken())), '/resource/api_keys', action.payload);
+../baseapp/src/modules/user/wallets/sagas/walletsWithdrawSaga.ts:        yield call(API.post(walletsWithdrawCcyOptions(getCsrfToken())), '/account/withdraws', action.payload);
+../baseapp/src/modules/user/beneficiaries/sagas/beneficiariesCreateSaga.ts:        const payload = yield call(API.post(config(getCsrfToken())), '/account/beneficiaries', action.payload);
+../baseapp/src/modules/user/emailVerification/sagas/emailVerificationSaga.ts:        yield call(API.post(sessionsConfig), '/identity/users/email/generate_code', {
+../baseapp/src/modules/user/password/sagas/changeForgotPasswordSaga.ts:        yield call(API.post(changeForgotPasswordConfig), '/identity/users/password/confirm_code', action.payload);
+../baseapp/src/modules/user/password/sagas/forgotPasswordSaga.ts:        yield call(API.post(forgotPasswordConfig), '/identity/users/password/generate_code', action.payload);
+../baseapp/src/modules/user/auth/sagas/signUpSaga.ts:        yield call(API.post(signUpConfig), '/identity/users', action.payload);
+../baseapp/src/modules/user/auth/sagas/verificationSaga.ts:        yield call(API.post(verificationConfig), '/identity/users/email/confirm_code', action.payload);
+../baseapp/src/modules/user/auth/sagas/signInSaga.ts:        const user = yield call(API.post(sessionsConfig), '/identity/sessions', action.payload);
+../baseapp/src/modules/user/ordersHistory/sagas/ordersCancelAllSaga.ts:        yield call(API.post(ordersCancelAllOptions(getCsrfToken())), '/market/orders/cancel', action.payload);
+../baseapp/src/modules/user/ordersHistory/sagas/ordersHistoryCancelSaga.ts:        yield call(API.post(ordersCancelOptions(getCsrfToken())), `/market/orders/${id}/cancel`, { id });
+../baseapp/src/modules/user/openOrders/sagas/openOrdersCancelSaga.ts:            yield call(API.post(ordersCancelOptions(getCsrfToken())), `/market/orders/${uuid}/cancel`, { uuid });
+../baseapp/src/modules/user/openOrders/sagas/openOrdersCancelSaga.ts:            yield call(API.post(ordersCancelOptions(getCsrfToken())), `/market/orders/${id}/cancel`, { id });
+../baseapp/src/modules/user/profile/sagas/generate2faQRSaga.ts:        const qrData: GenerateQRResponse = yield call(API.post(generate2faQROptions(getCsrfToken())), '/resource/otp/generate_qrcode');
+../baseapp/src/modules/user/profile/sagas/toggle2faSaga.ts:        yield call(API.post(enable2faOptions(getCsrfToken())), `/resource/otp/${enable ? 'enable' : 'disable'}`, code);
+../baseapp/src/modules/user/kyc/documents/sagas/sendDocumentsSaga.ts:        const response = yield call(API.post(sessionsConfig(getCsrfToken())), '/resource/documents', action.payload);
+../baseapp/src/modules/user/kyc/phone/sagas/resendCodeSaga.ts:        yield call(API.post(sessionsConfig(getCsrfToken())), '/resource/phones/send_code', action.payload);
+../baseapp/src/modules/user/kyc/phone/sagas/sendCodeSaga.ts:        yield call(API.post(sessionsConfig(getCsrfToken())), '/resource/phones', action.payload);
+../baseapp/src/modules/user/kyc/phone/sagas/confirmPhoneSaga.ts:        yield call(API.post(sessionsConfig(getCsrfToken())), '/resource/phones/verify', action.payload);
+../baseapp/src/modules/user/kyc/identity/sagas/sendIdentitySaga.ts:        const response = yield call(API.post(sessionsConfig(getCsrfToken())), '/resource/profiles', action.payload);

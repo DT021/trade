@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="_x31_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
+	.st2{fill:url(#SVGID_3_);}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="9.9746" y1="-20.9811" x2="108.1919" y2="-76.2997" gradientTransform="matrix(1 0 0 1 0 70.92)">
+	<stop  offset="0" style="stop-color:#BEEB00"/>
+	<stop  offset="0.23" style="stop-color:#58BF00"/>
+	<stop  offset="0.42" style="stop-color:#58BF00"/>
+	<stop  offset="0.61" style="stop-color:#29B800"/>
+	<stop  offset="0.78" style="stop-color:#00AE1D"/>
+	<stop  offset="0.99" style="stop-color:#00A62C"/>
+</linearGradient>
+<path class="st0" d="M50.2,12.5v33.1l-17.4-8.2V18.8L50.2,12.5z"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="4.5926" y1="-30.5377" x2="102.8099" y2="-85.8563" gradientTransform="matrix(1 0 0 1 0 70.92)">
+	<stop  offset="0" style="stop-color:#BEEB00"/>
+	<stop  offset="0.23" style="stop-color:#58BF00"/>
+	<stop  offset="0.42" style="stop-color:#58BF00"/>
+	<stop  offset="0.61" style="stop-color:#29B800"/>
+	<stop  offset="0.78" style="stop-color:#00AE1D"/>
+	<stop  offset="0.99" style="stop-color:#00A62C"/>
+</linearGradient>
+<path class="st1" d="M7.8,46.2l17,8V21.3l-17-8V46.2z"/>
+<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-1.5228" y1="-41.3954" x2="96.6945" y2="-96.714" gradientTransform="matrix(1 0 0 1 0 70.92)">
+	<stop  offset="0" style="stop-color:#BEEB00"/>
+	<stop  offset="0.23" style="stop-color:#58BF00"/>
+	<stop  offset="0.42" style="stop-color:#58BF00"/>
+	<stop  offset="0.61" style="stop-color:#29B800"/>
+	<stop  offset="0.78" style="stop-color:#00AE1D"/>
+	<stop  offset="0.99" style="stop-color:#00A62C"/>
+</linearGradient>
+<path class="st2" d="M49.5,11.9l0.3-0.1l0.2-0.1L33.1,3.8L33,3.9l-0.4,0.2l-0.2,0.1L8.5,12.7l16.8,7.9l7.1-2.5l0.4-0.1L49.5,11.9
+	L49.5,11.9z"/>
+</svg>

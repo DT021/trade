@@ -1,0 +1,39 @@
+.cr-dropdown {
+  outline: none;
+  background-color: var(--background);
+  position: relative;
+
+  .dropdown {
+    width: 100%;
+
+    &-toggle {
+      width: 100%;
+      background: var(--main-bg) !important;
+      border-color: var(--orders-border-color);
+      height: calc(var(--gap) * 8.3);
+      text-align: left;
+      font-size: calc(var(--gap) * 2);
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    &-menu {
+      width: 100%;
+      background: var(--background-dropdown);
+      padding: 0;
+    }
+
+    &-item {
+      color: var(--color-white);
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      &:hover, &:focus {
+        background: var(--header-text);
+        outline: none;
+      }
+    }
+  }
+}

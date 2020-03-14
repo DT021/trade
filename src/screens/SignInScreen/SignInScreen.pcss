@@ -1,0 +1,255 @@
+.pg-sign-in-sidebarsecond{
+  width:100%;
+  position:relative;
+  margin: 0 auto;
+}
+.pg-sign-in-screen {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background: var(--background-dark);
+    flex-direction: column;
+    align-items: center;
+
+  .pg-sign-in-screen__container {
+    background: transparent;
+    margin-top: calc(var(--gap) * 3.33);
+    width: calc(var(--gap) * 70.66);
+    min-height: 85vh;
+  }
+ 
+  .cr-sign-in-form {
+    background: var(--base-bright);
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    height: calc(var(--big-gap) * 5.5);
+
+    &__options-group {
+      width: 100%;
+      height: calc(var(--big-gap) * 0.97); 
+    }
+    &__bottom-section{
+        position: absolute;
+        bottom: -50px;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999999999;
+    }
+
+    &__button-wrapper{
+
+      &__loginn { 
+ 
+        .btn-primary{
+          border:none; 
+          position: relative;
+          display: block;
+         overflow: hidden;
+          background-color: #272d3e!important;
+          color: #fff;
+          font-size: 17px;
+         margin-top: 25px;
+         padding: 10px 0;
+         box-shadow: 0px 7px 18px rgba(0, 0, 0, 0.55);
+         border-radius:0;
+          
+         &:not(:disabled):not(.disabled):active:focus{
+           box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+         }
+
+         &:not(:disabled):not(.disabled):active{
+           background-color: #272d3e!important;
+           border:none;
+         }
+           
+          &:disabled{
+            opacity:0.65;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+
+              .coin_border{
+                background-color: #272d3e;
+              }
+            &:disabled:hover{
+              color: #000;
+            }
+          }
+ 
+           .coin_border{
+              position: absolute;
+              width: 2px;
+              height: 100%;
+              left: 0;
+              top: 0;
+              background-color: #efc20d; 
+            }
+            .border-hover{
+              position: absolute;
+              display: block;
+              top: -50px;
+              left: 0;
+              width: 2px;
+              height: 100%;
+              -webkit-transition: all .3s;
+              transition: all .3s;
+              background-color: #272d3e; 
+            }
+
+        }
+
+          .btn-primary:hover{
+                color: #fdce01;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+            
+                    .border-hover {
+                        top: 0;
+                }
+          }
+        
+      }
+    }
+
+    &__option { 
+      .__selected {
+        border-bottom: 2px solid var(--sign-in-accent);
+        color: var(--color-white);
+      }
+    }
+
+    .cr-button {
+      color: var(--white);
+      background: var(--button-primary);
+      border-radius: calc(var(--gap) * 0.5);
+      font-size: calc(var(--gap) * 2.66);
+      margin-top: calc(var(--gap) * 1.55);
+
+      &--disabled {
+        color: var(--button-dark-gray);
+        background: var(--button-disabled) !important;
+      }
+
+      &:hover {
+        background: var(--button-hover) !important;
+      }
+
+      &:active {
+        background: var(--button-active) !important;
+      }
+    }
+    &__title {
+      background: transparent;
+      font-size: calc(var(--gap) * 4);
+      margin: calc(var(--gap) * 6.66) !important;
+    }
+
+    &__forgot {
+      color: var(--base-new);
+      padding-top: calc(var(--gap) * 1.33);
+    }
+    &__input {
+      input {
+        color: var(--color-white);
+        font-size: calc(var(--gap) * 2.33);
+        border: 1px solid var(--input-block-border-color);
+        border-radius: calc(var(--gap) * 0.66);
+      }
+    }
+    &__error,
+    &__error-message {
+      color: var(--order-error-color);
+    }
+    &__footer {
+      position: absolute;
+      bottom: calc(var(--gap) * (-1.66));
+      right: 0;
+      left: 0;
+      &-create {
+        font-size: calc(var(--gap) * 2.33);
+        font-weight: bolder;
+      }
+      &-signup {
+        color: var(--active-color);
+        font-size: calc(var(--gap) * 2.33);
+        font-weight: bold;
+      }
+    }
+    &__group--focused {
+      .cr-sign-in-form__label {
+        color: var(--sign-in-accent);
+      }
+
+      input {
+        border-color: var(--sign-in-accent) !important;
+      }
+    }
+ 
+  }
+}
+@media screen and (max-width: 768px) {
+  .pg-sign-in-screen {
+    .pg-sign-in-screen__container {
+      margin: calc(var(--gap) * 3.33) calc(var(--gap) * 1.66) 0;
+      width: 100%;
+    }
+    .cr-sign-in-form {
+      &__button {
+        margin-top: calc(var(--gap) * 4);
+        font-size: calc(var(--gap) * 2);
+      }
+      &__title {
+        background: transparent;
+        margin-top: calc(var(--gap) * 2);
+      }
+    }
+  }
+}
+.input-group-lg>.custom-select, 
+.input-group-lg>.form-control:not(textarea){
+  height: calc(1.9em + 1rem + 2px);
+}
+.input-group-lg>.form-control{
+    border-radius: 0;
+    border: 1px solid hsla(0, 1%, 63%, 0.33);  
+}
+
+.cr-sign-up-form__form-content .custom-control.custom-checkbox {
+      margin-top: 33px;
+      padding-left: 0rem;
+      
+    input[type=checkbox]{
+          display: none;
+       }
+
+    .custom-control-label {
+       width: 100%;
+        left: -22px;
+        padding-left: 30px;
+
+        &:after{content:none;}
+        &:before {
+            border-radius: 0;
+            left: 26px;
+            background-color: transparent;
+           border: #adb5bd solid 1px;
+           -webkit-transition: all .12s, border-color .08s;
+          transition: all .12s, border-color .08s;
+        }
+      }
+      input[type="checkbox"]:checked + .custom-control-label:before{
+            width: 8px;
+            border-color:var(--sign-in-accent);
+            top: -2px;
+            left: 26px;
+            border-radius: 0;
+            opacity: 1;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+      }
+      
+}
+ 

@@ -1,0 +1,106 @@
+.pg-open-orders {
+  width: 100%;
+  background: transparent;
+
+
+  @media (max-width: 640px) {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    max-width: 100%;
+  }
+
+  .cr-table td:last-child {
+    width: 3.5%;
+  }
+
+  .cr-table-header {
+    &__content {
+      padding: 9px 9px 9px 12px;
+    }
+
+    &__cancel {
+      float: right;
+      cursor: pointer;
+    }
+
+    &__close {
+      position: relative;
+      display: inline-block;
+      margin-left: calc(var(--gap) / 1.33);
+      height: calc(var(--gap) * 2);
+      width: calc(var(--gap) * 2);
+      cursor: pointer;
+
+      &::before,
+      &::after {
+        background: var(--text-table-grey);
+        content: '';
+        position: absolute;
+        top: 55%;
+        left: 0;
+        height: 2px;
+        width: 100%;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.cr-open-orders .cr-table th,
+.cr-open-orders .cr-table td {
+  width: auto !important;
+  &:not(:first-child) {
+    text-align: right;
+  }
+
+  &:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.pg-open-orders--loading {
+  background: rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  .open-order-loading {
+    position: absolute;
+    padding-top: calc(var(--gap) * 4.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+  }
+}
+
+.pg-open-orders--empty {
+  .cr-table__body {
+    tr {
+      td:nth-child(3) {
+        text-align: center;
+      }
+      td:last-child {
+        display: block;
+        width: 100%;
+        font-size: 11px !important;
+        font-weight: bold;
+        margin-left: 10px;
+        padding: 20px 0 20px 0 !important;
+      }
+    }
+  }
+}
